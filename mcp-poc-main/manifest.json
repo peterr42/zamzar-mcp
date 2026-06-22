@@ -1,0 +1,20 @@
+{
+  "manifest_version": "0.2",
+  "name": "zamzar-mcp",
+  "version": "1.0.0",
+  "description": "An MCP server for Windows that provides easy access to features of Zamzar's API, including file conversions.",
+  "author": {
+    "name": "Peter Williams"
+  },
+  "icon" : "icon.png",
+  "server": {
+    "type" : "binary",
+    "entry_point": "server/server.php",
+    "mcp_config": {
+      "command": "php",
+      "args": [
+        "${__dirname}/server/server.php"
+      ]
+    }
+  }
+}

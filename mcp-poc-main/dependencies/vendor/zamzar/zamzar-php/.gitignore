@@ -1,0 +1,26 @@
+# Ignore build files
+build/*
+
+# Mac OS X files
+.DS_Store
+
+# Ignore the /vendor/ directory
+/vendor/
+
+# Ignore the composer.lock file as the vendor directory isn't being submitted
+composer.lock
+
+# Ignore test files
+.phpunit.result.cache
+/tests/tinker/
+/tests/TestConfig.php
+
+# IDEs
+/.vscode/
+/.idea
+
+# scratch files
+TODO.md
+
+# docker compose overrides
+docker-compose.override.yml
